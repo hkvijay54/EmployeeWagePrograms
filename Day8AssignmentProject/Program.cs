@@ -1,22 +1,34 @@
 ﻿using System;
+// check two lines are identical.
 
+class Calcu
+{
+    public int a, b, c, d;
+
+    public Calcu(int x1, int y1, int x2, int y2)
+    {
+        this.a = x1;
+        this.b = y1;
+        this.c = x2;
+        this.d = y2;
+    }
+    public double Result()
+    {
+        double diffx = Math.Pow((c - a), 2);
+        double diffy = Math.Pow((d - b), 2);
+        double res = Math.Sqrt(diffx + diffy);
+        return res;
+    }
+}
 class Program
 {
-    public void line()
-    {
-        Console.WriteLine("Enter two pairs of number (x1,y1)(x2,y2)");
-        int x1 = Convert.ToInt32(Console.ReadLine());
-        int y1 = Convert.ToInt32(Console.ReadLine());
-        int x2 = Convert.ToInt32(Console.ReadLine());
-        int y2 = Convert.ToInt32(Console.ReadLine());
-        double diffx = Math.Pow((x2 - x1), 2);
-        double diffy = Math.Pow((y2 - y1), 2);
-        double res = Math.Sqrt(diffx + diffy);
-        Console.WriteLine(res);
-    }
     static void Main(string[] args)
     {
-        Program l= new Program();
-        l.line();
+        Calcu c = new Calcu(1, 1, 5, 5);
+        Calcu d = new Calcu(2, 2, 6, 6);
+        double output1 = c.Result();
+        double output2 = d.Result();
+        Console.WriteLine("is two lines idetical? " + output1.Equals(output2));
+        Console.WriteLine(output1 + " and " + output2);
     }
 }
