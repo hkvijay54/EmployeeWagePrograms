@@ -25,10 +25,21 @@ class Program
     static void Main(string[] args)
     {
         Calcu c = new Calcu(1, 1, 5, 5);
-        Calcu d = new Calcu(2, 2, 6, 6);
+        Calcu d = new Calcu(2, 2, 6, 7);
         double output1 = c.Result();
         double output2 = d.Result();
-        Console.WriteLine("is two lines idetical? " + output1.Equals(output2));
-        Console.WriteLine(output1 + " and " + output2);
+
+        if (output1 > output2)
+        {
+            Console.WriteLine("Line 1 is greater");
+        }
+        else if (output1 == output2)
+        {
+            Console.WriteLine("Both lines are equal");
+        }
+        else
+        {
+            Console.WriteLine("Line 2 is greater");
+        }
     }
 }
