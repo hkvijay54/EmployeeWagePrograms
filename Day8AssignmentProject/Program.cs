@@ -1,5 +1,5 @@
 ﻿using System;
-// check employee pesent or not
+// check employee pesent or not.
 class Program
 {
     public void empChek()
