@@ -1,7 +1,8 @@
 ﻿using System;
 // Calculate Wages till a condition of total working hours or
 // days is reached for a month
-class Program
+
+class Employee
 {
     public void empWage()
     {
@@ -42,9 +43,14 @@ class Program
         int totalSalary = totalEmpHrs * EMP_RATE_PER_HOUR;
         Console.WriteLine(" Total salary is " + totalSalary);
     }
+}
+
+
+class Program
+{
     static void Main(string[] args)
     {
-        Program emp = new Program();
-        emp.empWage();   
+        Employee emp = new Employee();
+        emp.empWage();
     }
 }
