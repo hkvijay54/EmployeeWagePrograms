@@ -1,27 +1,34 @@
 ﻿using System;
-// check employee pesent or not.
+// check employee Wage
 class Program
 {
-    public void empChek()
+    public void empWage()
     {
         //constants
         int IS_FULL_TIME = 1;
+        int EMP_RATE_PER_HOUR = 20;
+
+        // Variables
+        int emphrs = 0;
+        int empwage = 0;
+
         Random random = new Random();
 
         int empCheck = random.Next(0, 2);
         if (empCheck == IS_FULL_TIME)
         {
-            Console.WriteLine("Employee is Present = " + empCheck);
+            emphrs = 8;
         }
         else
         {
-            Console.WriteLine("Employee is absent = " + empCheck);
+            emphrs = 0;
         }
+        empwage = emphrs * EMP_RATE_PER_HOUR;
+        Console.WriteLine("emp Wage: " + empwage);
     }
     static void Main(string[] args)
     {
-        Program emp = new Program();
-        
-        emp.empChek();
+        Program emp=new Program();
+        emp.empWage();
     }
 }
