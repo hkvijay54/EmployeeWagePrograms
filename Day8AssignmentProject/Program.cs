@@ -1,45 +1,47 @@
 ﻿using System;
-// check two lines are identical.
 
-class Calcu
+namespace Compute_wage_of_multi_companies
 {
-    public int a, b, c, d;
+    class Program
+    {
+        public const int isPartTime = 1;
+        public const int isFullTime = 2;
 
-    public Calcu(int x1, int y1, int x2, int y2)
-    {
-        this.a = x1;
-        this.b = y1;
-        this.c = x2;
-        this.d = y2;
-    }
-    public double Result()
-    {
-        double diffx = Math.Pow((c - a), 2);
-        double diffy = Math.Pow((d - b), 2);
-        double res = Math.Sqrt(diffx + diffy);
-        return res;
-    }
-}
-class Program
-{
-    static void Main(string[] args)
-    {
-        Calcu c = new Calcu(1, 1, 5, 5);
-        Calcu d = new Calcu(2, 2, 6, 7);
-        double output1 = c.Result();
-        double output2 = d.Result();
-
-        if (output1 > output2)
+        public static int computeEmpWage(string company, int empRatePerHour,
+            int numOfWorkingDays, int maxHoursPerMonth)
         {
-            Console.WriteLine("Line 1 is greater");
+            //Variables
+            int empHrs = 0, totalEmpHrs = 0, totalWorkingDays = 0;
+            //Computation
+            while (totalEmpHrs < maxHoursPerMonth && totalWorkingDays < numOfWorkingDays)
+            {
+                totalWorkingDays++;
+                Random random = new Random();
+                int empCheck = random.Next(0, 3);
+                switch (empCheck)
+                {
+                    case isPartTime:
+                        empHrs = 4;
+                        break;
+                    case isFullTime:
+                        empHrs = 8;
+                        break;
+                    default:
+                        empHrs = 0;
+                        break;
+                }
+                totalEmpHrs += empHrs;
+                Console.WriteLine("Day#:" + totalWorkingDays + " Emp Hrs: " + empHrs);
+            }
+            int totalEmpWage = totalEmpHrs * empRatePerHour;
+            Console.WriteLine("Total Emp Hrs: " + totalEmpHrs);
+            Console.WriteLine("Total Emp Wage: " + totalEmpWage);
+            return totalEmpWage;
         }
-        else if (output1 == output2)
+        static void Main(string[] args)
         {
-            Console.WriteLine("Both lines are equal");
-        }
-        else
-        {
-            Console.WriteLine("Line 2 is greater");
+            computeEmpWage("DMart", 20, 20, 100);
+            computeEmpWage("Reliance", 10, 40, 200);
         }
     }
 }
