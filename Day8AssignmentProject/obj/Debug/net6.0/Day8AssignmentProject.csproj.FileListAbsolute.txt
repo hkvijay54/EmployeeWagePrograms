@@ -1,0 +1,15 @@
+D:\downloads\abc\C# day8 Assignment\Day8AssignmentProject\Day8AssignmentProject\bin\Debug\net6.0\Day8AssignmentProject.exe
+D:\downloads\abc\C# day8 Assignment\Day8AssignmentProject\Day8AssignmentProject\bin\Debug\net6.0\Day8AssignmentProject.deps.json
+D:\downloads\abc\C# day8 Assignment\Day8AssignmentProject\Day8AssignmentProject\bin\Debug\net6.0\Day8AssignmentProject.runtimeconfig.json
+D:\downloads\abc\C# day8 Assignment\Day8AssignmentProject\Day8AssignmentProject\bin\Debug\net6.0\Day8AssignmentProject.dll
+D:\downloads\abc\C# day8 Assignment\Day8AssignmentProject\Day8AssignmentProject\bin\Debug\net6.0\ref\Day8AssignmentProject.dll
+D:\downloads\abc\C# day8 Assignment\Day8AssignmentProject\Day8AssignmentProject\bin\Debug\net6.0\Day8AssignmentProject.pdb
+D:\downloads\abc\C# day8 Assignment\Day8AssignmentProject\Day8AssignmentProject\obj\Debug\net6.0\Day8AssignmentProject.csproj.AssemblyReference.cache
+D:\downloads\abc\C# day8 Assignment\Day8AssignmentProject\Day8AssignmentProject\obj\Debug\net6.0\Day8AssignmentProject.GeneratedMSBuildEditorConfig.editorconfig
+D:\downloads\abc\C# day8 Assignment\Day8AssignmentProject\Day8AssignmentProject\obj\Debug\net6.0\Day8AssignmentProject.AssemblyInfoInputs.cache
+D:\downloads\abc\C# day8 Assignment\Day8AssignmentProject\Day8AssignmentProject\obj\Debug\net6.0\Day8AssignmentProject.AssemblyInfo.cs
+D:\downloads\abc\C# day8 Assignment\Day8AssignmentProject\Day8AssignmentProject\obj\Debug\net6.0\Day8AssignmentProject.csproj.CoreCompileInputs.cache
+D:\downloads\abc\C# day8 Assignment\Day8AssignmentProject\Day8AssignmentProject\obj\Debug\net6.0\Day8AssignmentProject.dll
+D:\downloads\abc\C# day8 Assignment\Day8AssignmentProject\Day8AssignmentProject\obj\Debug\net6.0\ref\Day8AssignmentProject.dll
+D:\downloads\abc\C# day8 Assignment\Day8AssignmentProject\Day8AssignmentProject\obj\Debug\net6.0\Day8AssignmentProject.pdb
+D:\downloads\abc\C# day8 Assignment\Day8AssignmentProject\Day8AssignmentProject\obj\Debug\net6.0\Day8AssignmentProject.genruntimeconfig.cache
